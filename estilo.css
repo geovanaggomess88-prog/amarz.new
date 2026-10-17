@@ -1,0 +1,94 @@
+/* Identidade visual - Pec Canecas
+   Para mudar as cores do site inteiro, altere só os valores abaixo. */
+:root {
+  --cor-principal: #c2476a;   /* rosa escuro: menu e títulos */
+  --cor-clara: #fde4ea;       /* rosa claro: cabeçalho dos painéis */
+  --cor-fundo: #fff8f1;       /* creme: fundo da página */
+  --cor-texto: #4a3033;       /* marrom escuro: textos */
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--cor-principal);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Menu */
+.navbar-default {
+  background-color: var(--cor-principal);
+  border-color: var(--cor-principal);
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: var(--cor-clara);
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+/* Imagem principal e crédito */
+#sobre-nos img {
+  border-radius: 8px;
+}
+#sobre-nos h4 {
+  color: #8a6a6e;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+/* Painéis */
+.panel-default > .panel-heading {
+  background-color: var(--cor-clara);
+  color: var(--cor-principal);
+  cursor: pointer;
+}
+.panel-title {
+  font-weight: bold;
+}
+.panel-body {
+  background-color: #ffffff;
+}
+
+/* Carrossel */
+.carousel-inner > .item > img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.carousel-caption h3 {
+  background-color: rgba(194, 71, 106, 0.8);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 40px;
+}
+.rodape p {
+  margin: 0;
+}
